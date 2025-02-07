@@ -34,19 +34,33 @@ void menu(){
  
 }
 
+void menuClicks(){
+  
+  
+  if (dist( 950, 400, mouseX, mouseY) < 50){
+    
+    
+    
+    
+  mode = PATTERN1; 
+  }
+  
+  if (dist( 50, 400, mouseX, mouseY) < 50){
+    
+    
+    
+    
+  mode = PATTERN1; 
+  }
+  
+  
+}
+
 
  
 
 
-boolean touchingCircle ( int x, int y, int r) {
 
-  if ( dist(x, y, mouseX, mouseY) < r) {
-    return true;
-  } else {
-    return false;
-  }
-  
-}
   
   
   

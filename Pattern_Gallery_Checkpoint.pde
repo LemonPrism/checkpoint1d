@@ -6,6 +6,8 @@ color lblue = #A8CCC9;
 color tgreen= #DCEAB2;
 color agray = #B3D6C6;
 color turq = #75B9BE;
+color nblue=#000068; 
+color dblue= #000053; 
 //////////////////////////////////////////////////////////////////
 //Mode variables
 
@@ -15,7 +17,10 @@ final int MENU = 0;
 final int PATTERN1= 1;
 
 
+//////clock variables////////////////////////////
 
+
+float arm1, arm2; 
 
 
 
