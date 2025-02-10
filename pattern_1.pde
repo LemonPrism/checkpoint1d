@@ -58,7 +58,7 @@ void pattern1Clicks() {
 
 
 
-    mode = MENU;
+    mode = PATTERN2;
   }
 
   if (dist( 50, 400, mouseX, mouseY) < 50) {
@@ -66,7 +66,7 @@ void pattern1Clicks() {
 
 
 
-    mode = MENU;
+    mode = PATTERN3;
   }
 }
 
