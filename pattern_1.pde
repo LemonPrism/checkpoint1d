@@ -3,7 +3,7 @@ void pattern1 () {
   background( lblue);
 
 
-
+noStroke();
 
   if (touchingCircle ( 50, 400, 50) ) {
     fill (black);
@@ -33,18 +33,19 @@ void pattern1 () {
   ////clockpanels////////////////////////////
 
   int j, k;
-  j= 100;
-  k=110;
+ 
+      k=110;
   noStroke();
 
-  while ( k <= 500) {
+  while ( k <= 300) {
+  j= 100;
     while ( j< 450) {
 
       clockpanel(j, k);
 
-      j=j+60;
+      j=j+45;
     }
-    k=k+10;
+    k=k+60;
   }
 }
 
@@ -82,10 +83,23 @@ boolean touchingCircle ( int x, int y, int r) {
 
 
 void clockpanel(int x, int y) {
-
-  fill( dblue);
+  fill(dblue);
   pushMatrix();
-  translate(x, y);
-  circle (x, y, 100);
+  translate(x, y); 
+  stroke( white); 
+  strokeWeight( 3); 
+  circle(x, y, 80);  
+
+  float angle = random(TWO_PI); 
+
+  stroke(white);  
+
+
+  float handLength = 30;  
+  
+    strokeWeight(5);
+
+  line(x, y,  x + handLength * cos(angle), y + handLength * sin(angle));  
+
   popMatrix();
 }
